@@ -23,22 +23,27 @@ export default function UserCourse() {
     if (capacity > 0) {
       Axios.post(`http://localhost:8800/UserCourse/${params.id}/reg/`, { courseID: courseID }).then((response) => {
         if (response.data.message) {
+          //send error message in pop-up window
           setMessage(response.data.message);
         } else {
+          //decrease capacity by 1
           Axios.put("http://localhost:8800/updatecap/", {
             capacity: capacity - 1,
             courseID: courseID,
           }).then((response) => {
+            //make the selected course disappear after selecting
             setCourseList(
               courseList.filter((val) => {
                 return val.courseID !== courseID;
               })
             );
           });
+          //send success message in pop-up window
           setMessage("This course was selected successfully");
         }
       });
     } else {
+      //send error message in pop-up window
       setMessage("This course cannot be selected");
     }
     setHeader("Confirmation");
