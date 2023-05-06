@@ -17,7 +17,8 @@ export default function UserCourse() {
 
   const [filterTime, setFilterTime] = useState("All");
   const [filterDep, setFilterDep] = useState("All");
-
+  
+  //select course function
   const addCourse = (courseID, capacity) => {
     if (capacity > 0) {
       Axios.post(`http://localhost:8800/UserCourse/${params.id}/reg/`, { courseID: courseID }).then((response) => {
@@ -46,26 +47,31 @@ export default function UserCourse() {
 
   const [keyword, setKeyword] = useState("");
 
+  //search course function
   const getCourse = () => {
     if (filterTime === "All" && filterDep === "All") {
+      //no weekday or department is selected
       Axios.get("http://localhost:8800/getcour", {
         params: { keyword: keyword },
       }).then((response) => {
         setCourseList(response.data);
       });
     } else if (filterTime !== "All" && filterDep === "All") {
+      //only department is selected
       Axios.get("http://localhost:8800/getcoursebytime", {
         params: { keyword: keyword, filterTime: filterTime },
       }).then((response) => {
         setCourseList(response.data);
       });
     } else if (filterTime === "All" && filterDep !== "All") {
+      //only weekday is selected
       Axios.get("http://localhost:8800/getcoursebydep", {
         params: { keyword: keyword, filterDep: filterDep },
       }).then((response) => {
         setCourseList(response.data);
       });
     } else if((filterTime !== "All" && filterDep !== "All")){
+      //both weekday and department are selected
       Axios.get("http://localhost:8800/getcoursebytd", {
         params: {
           keyword: keyword,
@@ -88,6 +94,7 @@ export default function UserCourse() {
   return (
     <div className="back">
       <div className="box">
+    //button for going to profile page
         <button className="button ProPage" onClick={() => navigate(`/Profile/${params.id}`)}>
 
           <us className="User"></us>Profile Page
@@ -96,7 +103,7 @@ export default function UserCourse() {
         <div className="CUHK"> </div>
       </div>
       <div className="bar"></div>
-
+  //filter for weekday
       <div className="condt">
         <select
           onChange={(e) => {
@@ -116,6 +123,7 @@ export default function UserCourse() {
         </select>
         <span className="focus"></span>
       </div>
+  //filter for department
       <div className="condd">
         <select
           onChange={(e) => {
@@ -131,7 +139,7 @@ export default function UserCourse() {
         </select>
         <span className="focus"></span>
       </div>
-
+  //search box
       <p className="SearchBox">
         <form method="get" onSubmit={handleSubmit}>
           Search Course :
@@ -155,7 +163,7 @@ export default function UserCourse() {
           </se>
         </form>
       </p>
-
+  //search result of course information
       <p>
         <div className="Result">
           Search Result:
@@ -164,7 +172,9 @@ export default function UserCourse() {
               <div className="Course">
                 <details>
                   <summary>
+              //courseID and course name
                     {val.courseID} {val.name}
+              //button for adding course
                     <button
                       type="add"
                       className="button Acourse"
@@ -181,6 +191,7 @@ export default function UserCourse() {
                   </summary>
                   <br />
                   <br />
+                    //other course information list as table
                   <table className="scourse">
                     <tr>
                       <th>Time</th>
@@ -201,6 +212,7 @@ export default function UserCourse() {
               </div>
             );
           })}
+          //pop-up window for success and error message
           <Popup open={open} modal nested>
             {(close) => (
               <div className="modal">
@@ -229,7 +241,7 @@ export default function UserCourse() {
           </Popup>
         </div>
       </p>
-
+//button for logout
       <a href="/login"><button className="button Logout"><span className="lout"></span>Logout</button></a>
 
     </div>
