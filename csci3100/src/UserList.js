@@ -11,6 +11,7 @@ import addlogo from './logo/AddUser.png'
 
 export default function UserList() {
 
+  // initialize the state
   const [userID, setUserID] = useState(0);
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -29,6 +30,7 @@ export default function UserList() {
 
   const [courseList, setCourseList] = useState([]);
 
+  //To pass the request of add user to the backend server
   const addUser = () => {
     Axios.post("http://localhost:8800/createuser", {
       userID: userID,  
@@ -52,8 +54,10 @@ export default function UserList() {
     })
   };
 
+  //To pass the request of get user to the backend server
   const getUser = () => {
     if (keyword.trim() === '') {
+      // If the search key is an empty string 
       Axios.get('http://localhost:8800/user').then((response) => {
         setUserList(response.data);
       // })
@@ -61,6 +65,7 @@ export default function UserList() {
       //   console.error(error);
       });
     } else {
+      // If the search key is not an empty string 
       Axios.get('http://localhost:8800/userbyid', { params: { keyword: keyword } }).then((response) => {
         setUserList(response.data);
       // })
@@ -69,12 +74,15 @@ export default function UserList() {
       });
     }
   };
+  
+  //To pass the request of get user course to the backend server
   const getUserCourse = (userID) => {
     Axios.get('http://localhost:8800/usercourse', { params: { userID: userID } }).then((response) => {
       setCourseList(response.data);
     });
   };
 
+  //To pass the request of edit stduent name to the backend server
   const updateUserName = (userID) => {
     Axios.put("http://localhost:8800/updatename", { name: newName, userID: userID }).then(
       (response) => {
@@ -95,6 +103,7 @@ export default function UserList() {
       }
     );
   };
+  //To pass the request of edit stduent password to the backend server
   const updateUserPassword = (userID) => {
     Axios.put("http://localhost:8800/updatepassword", { password: newPassword, userID: userID }).then(
       (response) => {
@@ -115,6 +124,7 @@ export default function UserList() {
       }
     );
   };
+  //To pass the request of edit stduent study year to the backend server
   const updateUserStudyYear = (userID) => {
     Axios.put("http://localhost:8800/updateyear", { studyYear: newStudyYear, userID: userID }).then(
       (response) => {
@@ -135,6 +145,7 @@ export default function UserList() {
       }
     );
   };
+  //To pass the request of edit stduent major to the backend server
   const updateUserMajor = (userID) => {
     Axios.put("http://localhost:8800/updatemajor", { major: newMajor, userID: userID }).then(
       (response) => {
@@ -155,6 +166,7 @@ export default function UserList() {
       }
     );
   };
+  //To pass the request of edit stduent age to the backend server
   const updateUserAge = (userID) => {
     Axios.put("http://localhost:8800/updateage", { age: newAge, userID: userID }).then(
       (response) => {
@@ -176,6 +188,7 @@ export default function UserList() {
     );
   };
 
+  //To pass the request of delete user to the backend server
   const deleteUser = (userID) => {
     Axios.put("http://localhost:8800/incap", { userID: userID });
     Axios.delete(`http://localhost:8800/deleteuser/${userID}`).then((response) => {
@@ -189,6 +202,8 @@ export default function UserList() {
 
   // const [showInput, setShowInput] = useState(false);
   // const handleClick = () => {setShowInput(!showInput);};
+  
+  //Handle the button click behavior
   const handleClick = (userID) => {
     setUserList(prevUserList => prevUserList.map(user => {
       if (user.userID === userID) {
@@ -201,6 +216,7 @@ export default function UserList() {
 
   const [showTable, setShowTable] = useState(false);
 
+  //Handle the button click behavior
   const handleSubmit = (event) => {
     event.preventDefault();
     setShowTable(true);
@@ -209,6 +225,8 @@ export default function UserList() {
 
   // const [showList, setShowList] = useState(false);
   // const handleList = () => {setShowList(!showList);}
+  
+  //Handle the button click behavior
   const handleList = (userID) => {
     getUserCourse(userID);
     setUserList(prevUserList => prevUserList.map(user => {
@@ -230,6 +248,7 @@ export default function UserList() {
     return;
   }
 
+  // the layout
   return (
     <div className='background'>
       <nav className="boxa">
@@ -240,6 +259,7 @@ export default function UserList() {
       
       <div className="bara"></div>
       
+      {/* user search box */}
       <div className="SearchBoxa">
         <label>Search User : </label>
         <br />
@@ -249,6 +269,7 @@ export default function UserList() {
         </form>
       </div>
 
+      {/* add user */}
       <div className="Proa">
           <p><b>ADD USER</b></p>
           <p className="pima"></p>
@@ -285,6 +306,7 @@ export default function UserList() {
           </div>
       </div>
 
+      {/* search result table */}
       {showTable && (<div className="Resulta">
         <p>Search Result:</p>
         <div className="Usera">
