@@ -12,26 +12,30 @@ export default function User() {
   let params = useParams();
   const [userList, setUserList] = useState([]);
   const [courseList, setCourseList] = useState([]);
-  /* const id = match.params.id; */
   const [message, setMessage] = React.useState("");
   const [open, setOpen] = React.useState(false);
-
+// drop course function
   const dropCourse = (cid, capacity) => {
     Axios.put("http://localhost:8800/updatecap/", {
+      //increase capacity by 1
       capacity: capacity + 1,
+      //update dropped course in database
       courseID: cid,
     });
     Axios.delete(`http://localhost:8800/dropcourse/${cid}`).then((response) => {
       setCourseList(
+        //make the dropped course disappear immediately
         courseList.filter((val) => {
           return val.courseID !== cid;
         })
       );
     });
     setOpen(true);
+    //send success message in pop-up window
     setMessage("This course is dropped successfully");
   };
 
+  //show user information
   useEffect(() => {
     fetch(`http://localhost:8800/Profile/${params.id}`)
       .then((res) => res.json())
@@ -40,6 +44,7 @@ export default function User() {
       });
   }, []);
 
+  //show all selected course information
   useEffect(() => {
     fetch(`http://localhost:8800/Profile/${params.id}/getcourse/`)
       .then((res) => res.json())
@@ -50,6 +55,7 @@ export default function User() {
     <div className="back">
       <meta charset="UTF-8" />
       <div className="box">
+    {/* button for going to course browsing page */}
         <button className="CBroPage" onClick={() => navigate(`/UserCourse/${params.id}`)} ><us className="Browse"></us>Course Browsing Page</button>
         <div className="CUHK"> </div>
       </div>
@@ -57,6 +63,7 @@ export default function User() {
 
       <table className="whole">
         <tr>
+        {/* user information */}
           {userList.map((val, key) => {
             return (
               <th>
@@ -98,6 +105,7 @@ export default function User() {
                 <tr>
                   <th className="Coutabh">Selected Course</th>
                 </tr>
+                {/* selected course information */}
                 {courseList.map((val, key) => {
                   return (
                     <tr>
@@ -106,6 +114,7 @@ export default function User() {
                           <details>
                             <summary>
                               {val.courseID} {val.name}
+                              {/* drop course button */}
                               <button
                                 type="delete"
                                 className="DDcourse"
@@ -140,6 +149,7 @@ export default function User() {
                     </tr>
                   );
                 })}
+                {/* pop-up window for success massage */}
                 <Popup open={open} modal nested>
                   {(close) => (
                     <div className="modal">
@@ -173,7 +183,7 @@ export default function User() {
           </td>
         </tr>
       </table>
-
+      {/* logout button */}
       <a href="/login"><button className="button Logout"><us className="lout"></us>Logout</button></a>
 
     </div>
