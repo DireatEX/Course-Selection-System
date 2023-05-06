@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import { Navigate } from 'react-router-dom';
 import "./UserRegForm.css";
 import Axios from "axios";
 
@@ -14,6 +13,7 @@ export default function UserRegForm() {
     const [major, setMajor] = useState('');
     const [age, setAge] = useState(18);
 
+    // function to add user to backend
     const addUser = () => {
         Axios.post("http://localhost:8800/createUser", {
             userID: studentID,
@@ -68,6 +68,7 @@ export default function UserRegForm() {
         const passwordInput = value;
         const repeatPasswordInput = repeatPassword;
 
+        // check passwords inputs
         if (passwordInput === repeatPasswordInput) {
             setcomparePasswords('');
         }
@@ -99,6 +100,7 @@ export default function UserRegForm() {
         window.location.href = "/Login";
     };
       
+    // handle show/not show password by clicking eye icon
     const handlePasswordToggle = (e) => {
           const passwordInput = document.getElementById('password');
           const repeatPasswordInput = document.getElementById('repeat-password');
