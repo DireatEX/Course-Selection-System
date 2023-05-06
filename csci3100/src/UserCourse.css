@@ -1,0 +1,402 @@
+.back {
+    background-image: url('logo/sbg.jpg');
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    min-height: 800px;
+    margin:-10px;
+  
+  }
+  
+  
+  .CUHK {
+    height: 66px;
+    width: 87px;
+    float: right;
+    background-image: url('logo/LOGO.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    margin: 6.7px;
+    opacity: 0.95;
+  }
+  
+  .box {
+    background-color: rgba(255, 254, 254, 0.684);
+    max-width: 2500px;
+    height: 73px;
+    margin: auto;
+  }    
+  
+  .bar {
+    background-color: rgb(56, 67, 122);
+    max-width: 2500px;
+    height: 7px;
+    margin: auto;
+  }
+  
+  .button {
+    background-color: #b080d7;
+    border: none;
+    color: white;
+    padding: 6.7px 7.3px;
+    padding-left: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10.6px;
+    margin: 2.67px 1.3px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .ProPage {
+    background-color: #49759e;
+    border: 1.3px solid #49759e;
+    margin-top: 23.3px;
+    margin-left: 13.4px;
+    height: 33.5px;
+    width: auto;
+    padding-top: 9.3px;
+    border-radius: 5.7px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-shadow: 0.5px 0.5px 0.5px #000000;
+    box-shadow: 0 5.7px 10.3px 0 rgba(0, 0, 0, 0.24);
+    color: white;
+  }
+  
+  .ProPage:hover {
+    background-color: rgba(203, 211, 235, 0.25);
+    color: black;
+  }
+  
+  .User {
+    height: 25px;
+    width: 20px;
+    float: left;
+    margin: 2px;
+    background-image: url('logo/User.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -2.67px;
+  }
+  .Logout {
+    background-color: #456f96;
+    color: white;
+    margin-top: 23.3px;
+    margin-left: 13.3px;
+    height: 33.3px;
+    width: 90px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-shadow: 0.53px 0.53px 0.53px #000000;
+    position: fixed;
+    bottom: 8px;
+    left: 10.67px;
+  }
+  
+  .Logout:hover {
+      box-shadow: 0 5.3px 10.67px 0 rgba(0, 0, 0, 0.24);
+      background-color: rgb(97, 146, 195);
+      border: 1.3px solid #5588bc;
+      position: fixed;
+      bottom: 8px;
+      left: 10.67px;
+  }
+  .logout a:visited, .logout a:link, .logout a:active, .logout a:hover {
+      color: white;
+      text-decoration: none;
+  }
+  .lout {
+      height: 13.3px;
+      width: 16.67px;
+      float: left;
+      background-image: url('logo/logout.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-bottom: 10px;
+      margin-left: 3px;
+  }
+  
+  
+  .lout {
+    height: 20px;
+    width: 25px;
+    float: left;
+    background-image: url("logo/logout.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 0px;
+  }
+  
+  .SearchBox {
+  background-color: rgba(200, 219, 238, 0.667);
+  width: 750px;
+  height: 90px;
+  border: 2px solid #ffffff00;
+  padding: 50px; 
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 20px;
+  border-radius: 25px;
+  margin-top: 70px;
+  margin-left: 18%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.24);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  text-shadow: 0.1px 0.1px 0.1px #000000;
+  }
+  
+  .seng .sefoh {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid rgb(11, 47, 85);
+  width: 650px;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 8px;
+  background: rgba(255, 254, 254, 0.735);
+  }
+  
+  .seng button {
+  width: 50px;
+  height: 50px;
+  padding: 25px;
+  background: #2195f300;
+  color: white;
+  font-size: 17px;
+  border: 1px solid rgba(128, 128, 128, 0);
+  border-left: none;
+  cursor: pointer;
+  background-image: url('logo/sicon.png');
+  background-repeat: no-repeat;
+  background-size: 130%;
+  }
+  
+  .seng button:hover {
+  background: #bfd8ed00;
+  background-image: url('logo/sicon.png');
+  background-repeat: no-repeat;
+  background-size: 130%;
+  }
+  
+  .Result {
+  background-color: rgba(248, 248, 249, 0.811);
+  width: 1000px;
+  height: auto;
+  border: 1px solid #dadfe5ae;
+  padding: 30px; 
+  padding-left: 70px;
+  padding-bottom: 60px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 7%;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-family: Georgia, serif;
+  text-shadow: 0.1px 0.1px 0.1px #000000;
+  }
+  
+  .Course {
+  background-color: rgba(218, 226, 235, 0.821);
+  width: 900px;
+  height: auto;
+  border: 2px solid #616a73bb;
+  padding: 20px;
+  padding-bottom: 25px; 
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-left: 2%;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-shadow: 0.1px 0.1px 0.1px #000000;
+  box-shadow: 8px 8px 16px 0 rgba(0,0,0,0.24);
+  }
+  
+  .courseOut {
+  background-color: #fbfbfb00;
+  color: rgb(0, 0, 0);
+  margin-top: -7px;
+  margin-right: 10px;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  border: 1.5px solid #3e4c5a;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  float:right;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.24);
+  }
+  
+  .courseOut:hover {
+  background-color: #5b88b5; 
+  border: 1px solid #4b83bc;
+  color: rgb(253, 253, 253);
+  }
+  
+  .Acourse {
+  background-color: #5b88b5; 
+  border: 1px solid #4b83bc;
+  color: rgb(253, 253, 253);
+  margin-top: -7px;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  float:right;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.24);
+  }
+  
+  .Acourse:hover {
+      background-color: #fbfbfb00;
+      color: rgb(0, 0, 0);
+      border: 1.5px solid #3e4c5a;
+  }
+  
+  .scourse {
+  border-collapse: collapse;
+  width: 100%;
+  border: 3px solid #597d94ea;
+  table-layout: fixed;
+  }
+  
+  .scourse tr td {
+  text-align: left;
+  padding: 8px;
+  font-family: Georgia, sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  height: 30px;
+  }
+  
+  
+  .scourse th {
+  background-color: #4781a2e4;
+  color: white;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  padding: 8px;
+  text-align: left;
+  
+  }
+  
+  .condt {
+    position: absolute;
+    top: 50%;
+    margin-left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .condt select {
+    background-color: #3e6b90db;
+    border-radius: 2px;
+    color: rgb(238, 238, 238);
+    padding: 6px;
+    padding-left: 10px;
+    width: 180px;
+    border: 1px solid #597d94ea;
+    font-size: 15px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+  
+  .condd {
+    position: absolute;
+    top: 50%;
+    margin-left: 46%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .condd select {
+    background-color: #3e6b90db;
+    border-radius: 2px;
+    color: rgb(238, 238, 238);
+    padding: 6px;
+    padding-left: 10px;
+    width: 180px;
+    border: 1px solid #597d94ea;
+    font-size: 15px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+  
+  .modal {
+    font-size: 30px;
+    text-align: center;
+    background-color: #c5c7ca;
+  }
+  .modal > .header {
+    width: 99%;
+    border-bottom: 1px solid gray;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+  }
+  .modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+    letter-spacing: 0.75px;
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    padding-bottom: 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 30px;
+    text-align: center;
+    background: #adadae;
+    border-radius: 18px;
+    border: 3px solid #656565;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .confm  {
+      background-color: #8766b9d3;
+      border: 2px solid #8766b9d3;
+      color: rgb(253, 253, 253);
+      margin-top: -10px;
+      padding-left: 7px;
+      height: 40px;
+      width: 100px;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: Georgia, serif;
+      text-align: center;
+      box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.24);
+      text-shadow: 0.1px 0.1px 0.1px #000000;
+    }
+    
+     .confm:hover {
+      background-color: #fbfbfbdc;
+      color: rgb(0, 0, 0);
+      border: 1.5px solid #3e4c5a;
+    }
+  

@@ -1,0 +1,219 @@
+.back {
+    background-image: url('logo/sbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    min-height: 850px;
+    margin: -10px;
+  }
+  
+  .CUHK {
+    height: 100px;
+    width: 130px;
+    float: right;
+    background-image: url('logo/LOGO.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    margin: 10px;
+    opacity: 0.95;
+  }
+  
+  .box {
+    background-color: rgba(255, 254, 254, 0.684);
+    max-width: 2500px;
+    height: 110px;
+    margin: auto;
+  }
+  
+  .bar {
+    background-color: rgb(56, 67, 122);
+    max-width: 2500px;
+    height: 7px;
+    margin: auto;
+  }
+  
+  .buttonSignUp {
+    background-color: #b080d7;
+    border: none;
+    color: white;
+    padding: 10px 11px;
+    padding-left: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  
+  .Loginbtn {
+    background-color: #f4f4f4e7;
+    border: 2px solid #49759e;
+    margin-top: 23.3px;
+    margin-left: 13.4px;
+    height: 35px;
+    width: 120px;
+    padding-top: 9.3px;
+    border-radius: 5.7px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-shadow: 0.5px 0.5px 0.5px #000000;
+    box-shadow: 0 5.7px 10.3px 0 rgba(0, 0, 0, 0.24);
+    color: rgb(0, 0, 0);
+  
+  }
+  
+  .Loginbtn:hover {
+    color: white;
+    background-color: #36677f;
+    border: 1px solid #385c7d;
+  }
+  
+  .Key {
+    height: 40px;
+    width: 40px;
+    float: left;
+    background-image: url('logo/key.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -14px;
+    margin-left:-5px;
+    margin-right: -5px;
+  }
+  
+  .eye-icon {
+    display: inline-block;
+    font-size: 20px;
+    color: #696969;
+    cursor: pointer;
+    margin-left:-5px;
+  }
+  
+  .Sign {
+    background-color: rgba(248, 248, 249, 0.675);
+    width: 85%;
+    min-height: 540px;
+    padding: 0px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 7%;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    font-family: "Andale Mono", serif;
+    text-align:left;
+    text-shadow: 0.1px 0.1px 0.1px #000000;
+    box-shadow: 8px 8px 10px 8px rgba(0, 0, 0, 0.24);
+    color:#2e596f;
+  }
+  
+  .Signtab {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .Signtabh {
+    padding: 16px;
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: left;
+    border-bottom: 10px solid #36677fd0;
+    background-color: #36677fdf;
+    color: #fefefe;
+    font-weight: 900;
+    font-size: larger;
+    text-shadow: 1px 2px 1.5px #000000;
+  }
+  
+  
+  .Signtab tr re {
+    color: #da3232;
+    font-size: 13px;
+    font-family: Georgia, serif;
+    letter-spacing: 1px;
+    font-weight: 520;
+    margin-left: 2.5%;
+  }
+  
+  label {
+    font-size: 15px;
+    font-family: Georgia, serif;
+    text-shadow: 0.1px 0.1px 0.1px #302d2d;
+    text-align: left;
+    color: #322c2c6e;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+  }
+  
+  input[type=text], input[type=number], input[type=password] {
+    width: 35%;
+    padding: 15px;
+    margin-top: 9px;
+    margin-right: 10px;
+    display: inline-block;
+    border: 1.5px solid #8895a4b5;
+    box-sizing: border-box;
+    font-family: "Courier", serif;
+    font-size: 13px;
+    margin-left: 130px;
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  input[type=text]:focus, input[type=number]:focus, input[type=password]:focus {
+    background-color: #dddddd66;
+    outline: none;
+    color: #010101;
+  }
+  
+  .ThisIsSelect {
+    background-color: #ffffffdf;
+    width: 35%;
+    padding: 15px;
+    margin-top: 9px;
+    margin-right: 10px;
+    display: inline-block;
+    border: 1.5px solid #8895a4b5;
+    box-sizing: border-box;
+    font-family: "Courier", serif;
+    font-size: 13px;
+    margin-left: 130px;
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  .Mainselect {
+    font-family: "Courier", serif;
+    font-size: 13px;
+    width: 100%;
+  }
+  .Mainselect option{
+    background-color: white;
+  }
+  .sign {
+    background-color: #36677fdf;
+    color: white;
+    padding: 12px 20px;
+    margin-top: -50px;
+    margin-right: 130px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-shadow: 0.8px 0.8px 0.8px #000000;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    border: 2px solid #1e7787;
+  }
+  .sign:hover {
+    background-color: #36677f6d;
+    color: rgb(255, 252, 252);
+    border: 2px solid #36677fa1;
+  }
+  

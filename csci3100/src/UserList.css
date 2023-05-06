@@ -1,0 +1,385 @@
+.background {
+    background-image: url('logo/sbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    min-height: 1200px;
+    padding: 10px;
+    margin: -10px;
+    min-height: 850px;
+    padding: 10px;
+    margin: -10px;
+}
+
+.CUHKa {
+    height: 66px;
+    width: 87px;
+    float: right;
+    background-image: url('logo/LOGO.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    margin: 6.7px;
+    opacity: 0.95;
+}
+
+.boxa {
+    background-color: rgba(255, 254, 254, 0.684);
+    max-width: 2500px;
+    height: 73px;
+    margin: auto;
+}
+
+.bara {
+    background-color: rgb(56, 67, 122);
+    max-width: 2500px;
+    height: 7px;
+    margin: auto;
+}
+
+.buttona {
+    background-color: #b080d7;
+    border: none;
+    color: white;
+    padding: 6.7px 7.3px;
+    padding-left: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10.6px;
+    margin: 2.67px 1.3px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+  
+.CBroPagea {
+    background-color: #49759e;
+    border: 1.3px solid #49759e;
+    margin-top: 23.3px;
+    margin-left: 13.4px;
+    height: 33.5px;
+    width: auto;
+    padding-top: 9.3px;
+    border-radius: 5.7px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-shadow: 0.5px 0.5px 0.5px #000000;
+    box-shadow: 0 5.7px 10.3px 0 rgba(0, 0, 0, 0.24);
+    color: white;
+}
+  
+.CBroPagea:hover {
+    background-color: rgba(203, 211, 235, 0.25);
+    color: black;
+
+}
+
+.Browsea {
+    height: 40px;
+    width: 33.3px;
+    float: left;
+    background-image: url('logo/sicon.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -2.67px;
+}
+
+.SearchBoxa {
+    background-color: rgba(200, 219, 238, 0.667);
+    width: 533.3px;
+    height: 67.7px;
+    border: 1.33px solid #ffffff00;
+    padding: 33.3px; 
+    padding-left: -200px;
+    padding-right: 13.4px;
+    border-radius: 16.7px;
+    margin-top: 46.7px;
+    margin-left: 15%;
+    box-shadow: 0 5.33px 10.3px 0 rgba(0,0,0,0.24);
+    font-size: 15x;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-shadow: 0.06px 0.06px 0.06px #000000;
+}
+
+.SearchBoxa label {
+    font-size: 15x;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-shadow: 0.06px 0.06px 0.06px #000000;
+    margin-left: 0px;
+}
+
+.senga .sero {
+    padding: 6.7px;
+    font-size: 11.3px;
+    border: 0.67px solid rgb(11, 47, 85);
+    width: 450px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 0px;
+    background: rgba(255, 254, 254, 0.735);
+}
+  
+.senga button {
+    border: none;
+    background: none;
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+    background: #2195f300;
+    color: white;
+    font-size: 11.3px;
+    /* border: 0.67px solid rgba(128, 128, 128, 0);
+    border-left: none; */
+    cursor: pointer;
+    background-image: url('logo/sicon.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+  
+.senga button:hover {
+    background-image: url('logo/sicon.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.Proa {
+    float: right;
+    margin-right: 1.3%;
+    background-color: rgba(240, 240, 243, 0.881);
+    width: 20%;
+    min-height: 320px;
+    border: 0.67px solid #dadfe5ae;
+    padding: 20px;
+    padding-top: 13.3px;
+    border-radius: 3.3px;
+    margin-top: -36.67px;
+    margin-left: 2.67%;
+    font-size: 16.67px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-align: center;
+    box-shadow: 5.3px 5.3px 6.7px 5.3px rgba(0, 0, 0, 0.24);  
+}
+  
+.pima {
+    height: 100px;
+    width: 100px;
+    float: left;
+    background-image: url('logo/pimg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 10px;
+    margin-left: 30%;
+    border-radius: 80px;
+    border: 2.67px solid #dcdcdc;
+    box-shadow: 0 2.67px 2.67px 0 rgba(0, 0, 0, 0.24);
+}
+
+.infotaba {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 11.3px;
+}
+  
+.infotaba th {
+    padding: 5.3px;
+    text-align: left;
+    border-bottom: 1.3px solid #51707e2a;
+    height: 16.67px;
+}
+  
+.infotaba td {
+    padding: 5.3px;
+    text-align: left;
+    border-bottom: 1.3px solid #51707e40;
+    font-weight: normal;
+}
+
+.infotaba .ou{
+    width: 100%;
+    padding: 6.7px;
+    margin-top: 6px;
+    margin-right: 6.7px;
+    display: inline-block;
+    border: 1px solid #8895a4b5;
+    box-sizing: border-box;
+    font-family: "Courier", serif;
+    font-size: 8.3px;
+    margin-left: 0px;
+    box-shadow: 0px 1.3px 1.3px 0 rgba(0, 0, 0, 0.24);
+}
+  
+.infotaba .ou:focus {
+    background-color: #dddddd66;
+    outline: none;
+    color: #010101;
+}
+
+.addusera img {
+    width: 20px;
+    margin-top: 13.3px;
+}
+
+.addusera {
+    border: none;
+    background: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 13.3px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.Resulta {
+    background-color: rgba(248, 248, 249, 0.811);
+    width: 68%;
+    height: auto;
+    border: 0.67px solid #dadfe5ae;
+    padding: 20px; 
+    padding-left: 20px;
+    padding-bottom: 40px;
+    border-radius: 3.33px;
+    margin-top: 20px;
+    margin-left: 2%;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: Georgia, serif;
+    text-shadow: 0.3px 0.3px 0.3px #000000;
+}
+
+.Usera table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #4f7eade2;
+    table-layout: fixed;   
+}
+  
+.Usera td {
+    text-align: left;
+    padding: 5.3px;
+    font-family: Georgia, sans-serif;
+    font-weight: normal;
+    font-size: 11.3px;
+    border-bottom: 0.67px solid #d0cbcb;
+}
+  
+.Usera th {
+    background-color: #4781a2e4;
+    color: white;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    padding: 5.3px;
+    text-align: left;
+}
+
+.Logouta {
+    background-color: #456f96;
+    color: white;
+    margin-top: 23.3px;
+    margin-left: 13.3px;
+    height: 33.3px;
+    width: 80px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-shadow: 0.53px 0.53px 0.53px #000000;
+    position: fixed;
+    bottom: 8px;
+    left: 10.67px;
+  }
+
+.Logouta:hover {
+    box-shadow: 0 5.3px 10.67px 0 rgba(0, 0, 0, 0.24);
+    background-color: rgb(97, 146, 195);
+    border: 1.3px solid #5588bc;
+    position: fixed;
+    bottom: 8px;
+    left: 10.67px;
+}
+
+.logouta a:visited, .logouta a:link, .logouta a:active, .logouta a:hover {
+    color: white;
+    text-decoration: none;
+}
+  
+.louta {
+    height: 13.3px;
+    width: 16.67px;
+    float: left;
+    background-image: url('logo/logout.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+
+.Action button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.Action img {
+    width: 20px;
+}
+
+.Action input {
+    width: 67.7px;
+    height: 15px;
+    border: none;
+    margin-left: 0px;
+}
+
+.Popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.Popup .Popuptext {
+    visibility: hidden;
+    width: 155px;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 115%;
+    left: 58.5%;
+    margin-left: -80px;
+}
+
+.Popup .Popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.Popup .Show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}

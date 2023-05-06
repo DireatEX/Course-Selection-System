@@ -1,0 +1,164 @@
+.backlogin {
+    background-image: url('logo/sbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    min-height: 1200px;
+    padding: 10px;
+    margin: -10px;
+    min-height: 850px;
+    padding: 10px;
+    margin: -10px;
+    text-align: center;
+  }
+  
+  .CUHK {
+    height: 100px;
+    width: 130px;
+    float: right;
+    background-image: url('logo/LOGO.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    margin: 10px;
+    opacity: 0.95;
+  }
+  
+  .box {
+    background-color: rgba(255, 254, 254, 0.684);
+    max-width: 2500px;
+    height: 110px;
+    margin: auto;
+    
+  }
+  
+  .bar {
+    background-color: rgb(56, 67, 122);
+    max-width: 2500px;
+    height: 7px;
+    margin: auto;
+  }
+  
+  .button {
+    background-color: #b080d7;
+    border: none;
+    color: white;
+    padding: 10px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .tit {
+    font-size: 45px;
+    font-family: Georgia, serif;
+    color: #172c2f;
+    text-shadow: 0 2px 2px 0 #020303;
+    font-weight: bold;
+    margin-left: 20px;
+    letter-spacing: 3px;
+  }
+  
+  
+  .LoginBox {
+    background-color: rgba(255, 255, 255, 0.752);
+    width: 380px;
+    height: 265px;
+    border: 2px solid #ffffff00;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 7%;
+    margin-left: 35%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24);
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: "Andale Mono", serif;
+    color: #1d535a;
+    text-shadow: 0 2px 1px 0 #2d5e43;
+    font-weight: bold;
+  }
+
+  .errorMsg {
+    font-size: 15px;
+    font-family: Georgia, serif;
+    color: #c50000;
+    text-shadow: 0 2px 2px 0 #020303;
+    margin-left: 20px;
+    letter-spacing: 3px;
+  }
+  
+  .LoginPageInput{
+    width: 100%;
+    padding: 12px 20px;
+    margin-left: 0px;
+    display: inline-block;
+    border: 1.5px solid #8895a4b5;
+    box-sizing: border-box;
+    font-family: "Courier", serif;
+    font-size: 13px;
+    background-color: #f6f6f6;
+  }
+  
+  .LoginPageInput:focus {
+    background-color: #e6e6e6;
+    outline: none;
+  }
+  
+  .luser {
+    height: 35px;
+    width: 35px;
+    background-image: url('logo/uicon.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 10px;
+    float: left;
+    margin-left: 20px;
+  }
+  
+  .lpass {
+    height: 33px;
+    width: 33px;
+    background-image: url('logo/lock.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 22px;
+    margin-top: 15px;
+    float: left;
+  }
+  
+  .but {
+    background-color: #1e7787;
+    color: white;
+    padding: 12px 20px;
+    margin: 3px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-shadow: 0.8px 0.8px 0.8px #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    border: 2px solid #1e7787;
+  }
+  
+  .but:hover {
+    background-color: #1e7787b4;
+    color: rgb(255, 255, 255);
+    border: 2px solid #1e7787;
+  }
+  
+  .LoginBox a {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    color: #000000;
+    font-weight: 400;
+    margin-left: -30px;
+    text-decoration: underline;
+  }
