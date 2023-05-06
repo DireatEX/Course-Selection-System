@@ -3,7 +3,7 @@ import React from 'react';
 import Axios from "axios";
 import { useState } from 'react'
 export default function App() {
-const [courses,setCourses] = useState([])
+const [courses,setCourses] = useState([]);  //initialize the states
 const [keyword, setKeyword] = useState("");
 
 const [courseID,setCourseID] = useState('');
@@ -16,15 +16,16 @@ const [capacity,setCapacity] = useState(1);
 
 const [newTime,setNewTime] = useState("");
 const [newLocation,setNewLocation] = useState("");
-const [newDepartment,setNewDepartment] = useState("");
+const [newDepartment,setNewDepartment] = useState(""); 
 const [newInstructor,setNewInstructor] = useState("");
 const [newCapacity,setNewCapacity] = useState(1);
 const [courseOutline,setCourseOutline] = useState("");
-// const [newOutline,setNewOutline] = useState("");
+
+//To pass the request of add course to the backend server
 const addCourse = () => {
     Axios.post("http://localhost:8800/course/insert", {
         courseID: courseID,
-        name: name,
+        name: name, 
         time: time,
         location: location,
         department: department,
@@ -46,6 +47,7 @@ const addCourse = () => {
     });
     alert("The course has been added");
 };
+//To pass the request of get course to the backend server
 const getCourses = () => {
     if (keyword.trim() === '') {
         Axios.get("http://localhost:8800/course").then((response) => {
@@ -63,6 +65,7 @@ const getCourses = () => {
         });
     }
 };
+//To pass the request of delete course to the backend server
 const deleteCourse = (courseID) => {
     Axios.delete(`http://localhost:8800/deleteCourse/${courseID}`).then((response) => {
         setCourses(
@@ -73,7 +76,7 @@ const deleteCourse = (courseID) => {
     });
 };
 
-
+//To pass the request of update course information to the backend server
 const updateTime = (courseID) => {
     Axios.put("http://localhost:8800/updateTime", { time: newTime, courseID: courseID }).then(
         (response) => {
@@ -202,7 +205,7 @@ const uploadCourseOutline = (courseID) => {
         );
     };
 
-
+    //Handle the button click behavior 
 const handleSubmit = (event) => {
     event.preventDefault();
     getCourses();
@@ -236,7 +239,7 @@ const handleUpload = (courseID) =>{
         }
     }));
 
-}
+}//the layout
     return (
         <div className="back">
             <div className="box">
