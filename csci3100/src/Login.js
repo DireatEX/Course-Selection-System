@@ -13,28 +13,6 @@ export default function LoginForm(){
 
     const navigate = useNavigate();
 
-    /*
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            Axios.post('http://localhost:8800/userLogin', {params: {userID: userID, password: password}});
-            //const { uID } = response.data;
-            //setSuccessLogin(true);
-            if (userID === "0") setAdmin(true);
-            if (admin){
-                navigate('/UserList');
-                // Navigate to admin profile
-            }
-            else {
-                navigate(`/Profile/${userID}`);
-                // Navigate to user profile
-            }
-        } catch (error) {
-            setErrorMessage(error.response.data);
-        }
-    }
-    */
-
     function handleSubmit(e) {
         e.preventDefault();
         // Find user
@@ -43,7 +21,7 @@ export default function LoginForm(){
                 console.log(response.data);
                 setSuccessLogin(true);
                 if (userID === "0") {
-                    setAdmin(true);
+                    setAdmin(true); // unique user ID for admin
                 }
             })
             .catch((error) => {
@@ -59,7 +37,6 @@ export default function LoginForm(){
         }
         else {
             navigate(`/Profile/${userID}`);
-            //navigate('/Profile');
             // Navigate to user profile
         }
     }
